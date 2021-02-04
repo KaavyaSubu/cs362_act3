@@ -33,6 +33,8 @@ class TestCase(unittest.TestCase):
 		self.assertEqual(divide(-3.5,3.5),-1)
 	def divtest3(self):
 		self.assertEqual(divide(5,10),0.5)
+	def divtest4(self):
+		self.assertRaises(DividByZero,divide(5,0))
 
 if __name__ == '__main__':
 	unittest.main()

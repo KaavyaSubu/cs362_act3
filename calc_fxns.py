@@ -23,7 +23,12 @@ def multiply(a,b):
 	return a * b
 
 def divide(a, b):
-	return a / b
+	try:
+		a / b
+	except ZeroDivisonError:
+		print("Divison by zero")
+	else:
+		return a / b
 
 
 
